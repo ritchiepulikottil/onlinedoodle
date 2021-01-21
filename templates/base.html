@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Paint App</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div align="right">
+    <a href="/">Home</a>
+    |<a href="/save">Gallery</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
+
